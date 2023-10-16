@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace OrleansMetropole\Metadata\Enum;
 
-enum City: string
+enum City: string implements EnumInterface
 {
     case BOIGNYSURBIONNE = 'boigny-sur-bionne';
     case BOU = 'bou';
@@ -27,4 +27,32 @@ enum City: string
     case SAINTPRYVESAINTMESMIN = 'saint-pryve-saint-mesmin';
     case SARAN = 'saran';
     case SEMOY = 'semoy';
+    public function label(): string
+    {
+        return match($this) 
+        {
+            City::BOIGNYSURBIONNE => 'Boigny-Sur-Bionne',
+            City::BOU => 'Bou',
+            City::CHANTEAU => 'Chanteau',
+            City::CHECY => 'Checy',
+            City::COMBLEUX => 'Combleux',
+            City::FLEURYLESAUBRAIS => 'Fleury-Les-Aubrais',
+            City::INGRE => 'Ingre',
+            City::MARDIE => 'Mardie',
+            City::MARIGNYLESUSAGES => 'Marigny-Les-Usages',
+            City::LACHAPELLESAINTMESMIN => 'La-Chapelle-Saint-Mesmin',
+            City::OLIVET => 'Olivet',
+            City::ORLEANS => 'Orleans',
+            City::ORMES => 'Ormes',
+            City::SAINTCYRENVAL => 'Saint-Cyr-en-Val',
+            City::SAINTDENISENVAL => 'Saint-Denis-en-Val',
+            City::SAINTHILAIRESAINTMESMIN => 'Saint-Hilaire-Saint-Mesmin',
+            City::SAINTJEANDEBRAYE => 'Saint-Jean-de-Braye',
+            City::SAINTJEANDELARUELLE => 'Saint-Jean-de-la-Ruelle',
+            City::SAINTJEANDEBLANC => 'Saint-Jean-de-Blanc',
+            City::SAINTPRYVESAINTMESMIN => 'Saint-Pryve-Saint-Mesmin',
+            City::SARAN => 'Saran',
+            City::SEMOY => 'Semoy',   
+        };
+    }
 }
