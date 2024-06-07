@@ -6,27 +6,42 @@ namespace OrleansMetropole\Metadata\Enum;
 enum Theme: string implements EnumInterface
 {
     case COMMERCE = 'commerce';
-    case CULTURE = 'culture';
+    case ECONOMIEINNOVATION = 'economie-innovation';
     case EDUCATION = 'education';
-    case ENVIRONNEMENTPROPRETE = 'environnement-proprete';
-    case MAIRIECITOYENNETE = 'mairie-citoyennete';
-    case MOBILITE = 'mobilite';
-    case URBANISMEHABITAT = 'urbanisme-habitat';
-    case TRANSITIONECOLOGIQUE = 'transition-ecologique';
+    case EMPLOIFORMATION = 'emploi-formation';
+    case ENVIRONNEMENT = 'environnement';
+    case FESTIVALDELOIRE = 'festival-de-loire';
+    case FETESDEJEANNEDARC = 'fetes-de-jeanne-d-arc';
+    case GRANDPIANOFESTIVAL = 'grand-piano-festival';
+    case INSTITUTIONNEL = 'institutionnel';
+    case LOGEMENT = 'logement';
+    case MOBILITES = 'mobilites';
+    case SECURITETRANQUILITE = 'securite-tranquillite';
     case SOLIDARITESANTE = 'solidarite-sante';
+    case SORTIESLOISIRS = 'sorties-loisirs';
+    case SPORT = 'sport';
+    case URBANISME = 'urbanisme';
+    
     public function label(): string
     {
         return match($this) 
         {
             Theme::COMMERCE => 'Commerce',
-            Theme::CULTURE => 'Culture',
+            Theme::ECONOMIEINNOVATION => 'Economie - innovation',
             Theme::EDUCATION => 'Education',
-            Theme::ENVIRONNEMENTPROPRETE => 'Environnement Proprete',
-            Theme::MAIRIECITOYENNETE => 'Mairie Citoyennete',
-            Theme::MOBILITE => 'Mobilite',
-            Theme::URBANISMEHABITAT => 'Urbanisme Habitat',
-            Theme::TRANSITIONECOLOGIQUE => 'Transition écologique',
+            Theme::EMPLOIFORMATION => 'Emploi - Formation',
+            Theme::ENVIRONNEMENT => 'Environnement',
+            Theme::FESTIVALDELOIRE => 'Festival de Loire',
+            Theme::FETESDEJEANNEDARC => 'Fêtes de Jeanne d\'Arc',
+            Theme::GRANDPIANOFESTIVAL => 'Grand Piano Festival',
+            Theme::INSTITUTIONNEL => 'Institutionnel',
+            Theme::LOGEMENT => 'Logement',
+            Theme::MOBILITES => 'Mobilités',
+            Theme::SECURITETRANQUILITE => 'Sécurité - tranquillité',
             Theme::SOLIDARITESANTE => 'Solidarité - santé',
+            Theme::SORTIESLOISIRS => 'Sorties - Loisirs',
+            Theme::SPORT => 'Sport',
+            Theme::URBANISME => 'Urbanisme'
         };
     }
 }
