@@ -20,7 +20,7 @@ enum Area: string implements EnumInterface
             Area::EST => 'Est',
             Area::OUEST => 'Ouest',
             Area::CENTRE => 'Centre',
-            Area::SAINTMARCEAU => 'Saint Marceau',
+            Area::SAINTMARCEAU => 'Saint-Marceau',
             Area::LASOURCE => 'La Source',
         };
     }

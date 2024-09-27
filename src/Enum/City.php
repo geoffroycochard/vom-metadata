@@ -23,7 +23,7 @@ enum City: string implements EnumInterface
     case SAINTHILAIRESAINTMESMIN = 'saint-hilaire-saint-mesmin';
     case SAINTJEANDEBRAYE = 'saint-jean-de-braye';
     case SAINTJEANDELARUELLE = 'saint-jean-de-la-ruelle';
-    case SAINTJEANDEBLANC = 'saint-jean-de-blanc';
+    case SAINTJEANDEBLANC = 'saint-jean-le-blanc';
     case SAINTPRYVESAINTMESMIN = 'saint-pryve-saint-mesmin';
     case SARAN = 'saran';
     case SEMOY = 'semoy';
