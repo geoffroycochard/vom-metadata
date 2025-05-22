@@ -40,7 +40,7 @@ enum City: string implements EnumInterface
             City::INGRE => 'Ingré',
             City::MARDIE => 'Mardié',
             City::MARIGNYLESUSAGES => 'Marigny-les-Usages',
-            City::LACHAPELLESAINTMESMIN => 'La-Chapelle-Saint-Mesmin',
+            City::LACHAPELLESAINTMESMIN => 'La Chapelle-Saint-Mesmin',
             City::OLIVET => 'Olivet',
             City::ORLEANS => 'Orléans',
             City::ORMES => 'Ormes',
